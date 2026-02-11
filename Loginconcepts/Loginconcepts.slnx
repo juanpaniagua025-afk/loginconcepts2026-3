@@ -1,1 +1,5 @@
-<Solution />
+<Solution>
+  <Folder Name="/01/">
+    <Project Path="Isthenumberevenornot/Isthenumberevenornot.csproj" Id="79cee2d7-88ba-467d-af3e-89a46655027c" />
+  </Folder>
+</Solution>
