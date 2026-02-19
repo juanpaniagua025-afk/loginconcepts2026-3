@@ -1,5 +1,12 @@
 <Solution>
   <Folder Name="/01/">
-    <Project Path="Isthenumberevenornot/Isthenumberevenornot.csproj" Id="79cee2d7-88ba-467d-af3e-89a46655027c" />
+    <Project Path="Isthenumberevenornot/Isthenumberoddornot.csproj" Id="79cee2d7-88ba-467d-af3e-89a46655027c" />
+    <Project Path="prueba/prueba.csproj" Id="e1ca2024-1c75-4442-ad2a-7f80f094f497" />
+  </Folder>
+  <Folder Name="/02/">
+    <Project Path="thelargestnumber/thelargestnumber.csproj" Id="776d8fe9-9dde-4a3e-8773-465263bd4fb9" />
+  </Folder>
+  <Folder Name="/shared/">
+    <Project Path="Shared/shared/shared/shared/shared.csproj" Id="7b9d553c-b12e-4223-b899-e4d4e0b74168" />
   </Folder>
 </Solution>

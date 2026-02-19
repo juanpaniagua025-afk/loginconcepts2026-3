@@ -4,4 +4,9 @@
 	{
 		throw new NotImplementedException();
 	}
+
+	internal static void WriteLine(string v)
+	{
+		throw new NotImplementedException();
+	}
 }
