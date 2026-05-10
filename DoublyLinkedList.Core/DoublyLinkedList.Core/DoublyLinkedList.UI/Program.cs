@@ -26,13 +26,13 @@ namespace DoublyLinkedList.UI
 				Console.WriteLine("0. Exit");
 
 				Console.Write("Option: ");
-				option = int.Parse(Console.ReadLine());
+				option = int.Parse(Console.ReadLine() ?? "0");
 
 				switch (option)
 				{
 					case 1:
 						Console.Write("Enter data: ");
-						list.Add(Console.ReadLine());
+						list.Add(Console.ReadLine() ?? "");
 						break;
 
 					case 2:
@@ -60,7 +60,7 @@ namespace DoublyLinkedList.UI
 						Console.Write("Search data: ");
 
 						Console.WriteLine(
-							list.Exists(Console.ReadLine())
+							list.Exists(Console.ReadLine() ?? "")
 							? "Element exists"
 							: "Element does not exist"
 						);
@@ -68,12 +68,12 @@ namespace DoublyLinkedList.UI
 
 					case 8:
 						Console.Write("Remove data: ");
-						list.RemoveOne(Console.ReadLine());
+						list.RemoveOne(Console.ReadLine() ?? "");
 						break;
 
 					case 9:
 						Console.Write("Remove all occurrences of: ");
-						list.RemoveAll(Console.ReadLine());
+						list.RemoveAll(Console.ReadLine() ?? "");
 						break;
 
 					case 0:

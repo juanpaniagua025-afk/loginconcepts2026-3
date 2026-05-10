@@ -4,7 +4,7 @@ namespace DoublyLinkedList.Core
 {
 	public class DoublyLinkedList<T> where T : IComparable<T>
 	{
-		private Node<T> head;
+		private Node<T>? head;
 
 		public void Add(T data)
 		{
@@ -16,7 +16,7 @@ namespace DoublyLinkedList.Core
 				return;
 			}
 
-			Node<T> current = head;
+			Node<T>? current = head;
 
 			while (current != null && current.Data.CompareTo(data) < 0)
 			{
@@ -31,9 +31,9 @@ namespace DoublyLinkedList.Core
 			}
 			else if (current == null)
 			{
-				Node<T> temp = head;
+				Node<T>? temp = head;
 
-				while (temp.Next != null)
+				while (temp!.Next != null)
 				{
 					temp = temp.Next;
 				}
@@ -43,9 +43,9 @@ namespace DoublyLinkedList.Core
 			}
 			else
 			{
-				Node<T> previous = current.Previous;
+				Node<T>? previous = current.Previous;
 
-				previous.Next = newNode;
+				previous!.Next = newNode;
 				newNode.Previous = previous;
 
 				newNode.Next = current;
@@ -55,7 +55,7 @@ namespace DoublyLinkedList.Core
 
 		public void DisplayForward()
 		{
-			Node<T> current = head;
+			Node<T>? current = head;
 
 			while (current != null)
 			{
@@ -68,7 +68,7 @@ namespace DoublyLinkedList.Core
 
 		public void DisplayBackward()
 		{
-			Node<T> current = head;
+			Node<T>? current = head;
 
 			if (current == null)
 			{
@@ -91,8 +91,8 @@ namespace DoublyLinkedList.Core
 
 		public void SortDescending()
 		{
-			Node<T> current = head;
-			Node<T> temp = null;
+			Node<T>? current = head;
+			Node<T>? temp = null;
 
 			while (current != null)
 			{
@@ -111,7 +111,7 @@ namespace DoublyLinkedList.Core
 
 		public bool Exists(T data)
 		{
-			Node<T> current = head;
+			Node<T>? current = head;
 
 			while (current != null)
 			{
@@ -128,7 +128,7 @@ namespace DoublyLinkedList.Core
 
 		public void RemoveOne(T data)
 		{
-			Node<T> current = head;
+			Node<T>? current = head;
 
 			while (current != null)
 			{
@@ -157,11 +157,11 @@ namespace DoublyLinkedList.Core
 
 		public void RemoveAll(T data)
 		{
-			Node<T> current = head;
+			Node<T>? current = head;
 
 			while (current != null)
 			{
-				Node<T> next = current.Next;
+				Node<T>? next = current.Next;
 
 				if (current.Data.CompareTo(data) == 0)
 				{
@@ -188,7 +188,7 @@ namespace DoublyLinkedList.Core
 		{
 			Dictionary<T, int> counter = new Dictionary<T, int>();
 
-			Node<T> current = head;
+			Node<T>? current = head;
 
 			while (current != null)
 			{
@@ -231,7 +231,7 @@ namespace DoublyLinkedList.Core
 		{
 			Dictionary<T, int> counter = new Dictionary<T, int>();
 
-			Node<T> current = head;
+			Node<T>? current = head;
 
 			while (current != null)
 			{
